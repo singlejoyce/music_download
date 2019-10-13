@@ -33,7 +33,7 @@ def setSongInfo(song_path, music_info, pic_path, media_type):
         # 插入专辑名称
         tags['TALB'] = TALB(encoding=3, text=[music_info['albumName']])
         # 插入专辑公司
-        tags['TCOP'] = TCOP(encoding=3, text=[music_info['Company']])
+        # tags['TCOP'] = TCOP(encoding=3, text=[music_info['Company']])
         # 插入声道数
         tags['TRCK'] = TRCK(encoding=3, text=[music_info['trackNumber']])
         # 插入发行时间
@@ -86,29 +86,29 @@ def saveJsonFile(source, file_path):
 
 
 def startDownload(music_info, down_path, server, header=None):
-    mp3_down_path = down_path + "\\downmp3\\"
-    if not os.path.isdir(mp3_down_path):
-        os.makedirs(mp3_down_path)
+    song_down_path = down_path + "\\downmp3\\"
+    if not os.path.isdir(song_down_path):
+        os.makedirs(song_down_path)
 
     pic_down_path = down_path + "\\downpic\\"
     if not os.path.isdir(pic_down_path):
         os.makedirs(pic_down_path)
 
     filename = '%s - %s' % (music_info['artist'], music_info['name'])
-    lyric_save_path = mp3_down_path + filename + ".lrc"
+    lyric_save_path = song_down_path + filename + ".lrc"
     pic_save_path = pic_down_path + filename + ".jpg"
 
     print("%s: %s >>开始下载歌曲..." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), filename))
     if server == 'tencent':
-        mp3_save_path = mp3_down_path + filename + ".m4a"
+        song_save_path = song_down_path + filename + ".m4a"
 
         # qq音乐m4a：必须带headers，否则返回304错误
         # qq专辑图片：不需要带headers，否则返回404错误
         try:  # 下载音乐文件
-            downloadFile(music_info['down_url'], mp3_save_path, header=header)
+            downloadFile(music_info['down_url'], song_save_path, header=header)
         except:
             print("%s: %s >>音乐文件下载失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                          mp3_save_path))
+                                          song_save_path))
 
         try:  # 下载歌词
             downloadFile(music_info['lyric'], lyric_save_path, file_type='str')
@@ -122,24 +122,24 @@ def startDownload(music_info, down_path, server, header=None):
             print("%s: %s >>专辑图片下载失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                           pic_save_path))
         # 修改m4a相关信息
-        if os.path.exists(mp3_save_path):
+        if os.path.exists(song_save_path):
             try:
-                setSongInfo(mp3_save_path, music_info, pic_save_path, media_type='m4a')
+                setSongInfo(song_save_path, music_info, pic_save_path, media_type='m4a')
             except:
-                print("%s: %s >>信息修改失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), mp3_save_path))
+                print("%s: %s >>信息修改失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), song_save_path))
         else:
-            print("%s: %s >>信息修改失败，音乐文件不存在." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), mp3_save_path))
+            print("%s: %s >>信息修改失败，音乐文件不存在." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), song_save_path))
 
     elif server == 'netease':
-        mp3_save_path = mp3_down_path + filename + ".mp3"
+        song_save_path = song_down_path + filename + ".mp3"
 
         # 网易音乐和专辑图片：不需要带headers
         # 网易歌词：必须带headers，否则返回304错误
         try:  # 下载mp3文件
-            downloadFile(music_info['down_url'], mp3_save_path)
+            downloadFile(music_info['down_url'], song_save_path)
         except:
             print("%s: %s >>音乐文件下载失败. music_id=%s" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                                      mp3_save_path, str(music_info['id'])))
+                                                      song_save_path, str(music_info['id'])))
         try:  # 下载专辑图片
             downloadFile(music_info['pic_url'], pic_save_path)
         except:
@@ -151,10 +151,10 @@ def startDownload(music_info, down_path, server, header=None):
             print("%s: %s >>歌词下载失败. music_id=%s" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                                     lyric_save_path, str(music_info['id'])))
         # 修改mp3相关信息
-        if os.path.exists(mp3_save_path):
+        if os.path.exists(song_save_path):
             try:
-                setSongInfo(mp3_save_path, music_info, pic_save_path, media_type='mp3')
+                setSongInfo(song_save_path, music_info, pic_save_path, media_type='mp3')
             except:
-                print("%s: %s >>信息修改失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), mp3_save_path))
+                print("%s: %s >>信息修改失败." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), song_save_path))
         else:
-            print("%s: %s >>信息修改失败，音乐文件不存在." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), mp3_save_path))
+            print("%s: %s >>信息修改失败，音乐文件不存在." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), song_save_path))
