@@ -7,7 +7,6 @@ import string
 import urllib
 import urllib.request
 import urllib.response
-from bs4 import BeautifulSoup
 # import HTMLParser
 # 在python3.X版本使用pip isntall HTMLParser后，发现引入失败，
 # 提示：ModuleNotFoundError: No module named ‘markupbase’。
@@ -455,7 +454,7 @@ if __name__ == '__main__':
     # getRankList(downpath)
     # getAlbumList('梁静茹', downpath)
     # getAlbumList('陈奕迅', downpath)
-    start(downpath, search('庄心妍'))
+    start(downpath, search('周杰伦'))
     # start(downpath, getSongfromPlaylist('3651099683'))
     # start(downpath, getSongfromRankList('巅峰榜·新歌', '27', '2018-12-18'))
     # start(downpath, getSongfromAlbum('0032ezFm3F53yO'))
