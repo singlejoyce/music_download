@@ -7,6 +7,7 @@ import requests
 import time
 from myapi import formatString, startDownload, saveJsonFile
 import html
+from logger import Logger
 
 # url example
 # https://music.163.com/#/playlist?id=2538430210
@@ -67,8 +68,8 @@ def getSongfromCd(disstid):
         music_list = res.json()['result']['tracks']
         cdname = formatString(res.json()['result']['name'])
         # 遍历获取歌单中每首歌的信息
+        mylogger.info(" getSongfromCd 开始爬虫...")
         for song in music_list:
-            print("%s: %s 数据获取中..." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), formatString(song['name'])))
             music_publish_year = stamp_to_time(song['album']['publishTime'])[:4]  # 发行年份
             music_down_url = get_download_url(song['id'])
             lyric = get_lyric(song['id'])
@@ -77,10 +78,10 @@ def getSongfromCd(disstid):
                              albumName=song['album']['name'], publishYear=music_publish_year,
                              pic_url=song['album']['picUrl'], down_url=music_down_url, lyric=lyric)
             resultList.append(song_dict)
-
+        mylogger.info(" getSongfromCd 爬虫完成.")
         return cdname
     except:
-        print("music_down_url_new 获取失败")
+        mylogger.error(" getSongfromCd 爬虫异常...")
 
 
 def search(keyword):
@@ -95,8 +96,8 @@ def search(keyword):
     url = "http://music.163.com/api/cloudsearch/pc?"
     res = requests.get(url=url, params=params, headers=netease_header)
     search_data = json.loads(res.text)['result']['songs']
+    mylogger.info(" search 开始爬虫...")
     for data in search_data:
-        print("%s: %s 数据获取中..." % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), formatString(data['name'])))
         music_publish_year = stamp_to_time(data['publishTime'])[:4]  # 发行年份
         music_down_url = get_download_url(data['id'])
         lyric = get_lyric(data['id'])
@@ -105,23 +106,21 @@ def search(keyword):
                          albumName=data['al']['name'], publishYear=music_publish_year,
                          pic_url=data['al']['picUrl'], down_url=music_down_url, lyric=lyric)
         resultList.append(song_info)
+    mylogger.info(" search 爬虫完成.")
     return keyword
 
 
 def start(down_path, callbackfunc):
     result_name = callbackfunc
-    print("%s: 获取完成." % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
     file_path = down_path + result_name + '\\'
     if not os.path.isdir(file_path):
         os.makedirs(file_path)
     saveJsonFile(resultList, file_path + "result.json")
-
-    print("%s: 开始下载..." % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     for item in resultList:
         startDownload(item, file_path, server='netease')
-    print("%s: 下载完成." % datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     resultList.clear()
+
 
 # 固定几大榜单
 cd_lists = {
@@ -135,11 +134,11 @@ cd_lists = {
     # "中国TOP排行榜（内地榜）": 64016,
     # "iTunes榜": 11641012,
     # "美国Billboard周榜": 60198,
-    "Eng~": 2268910083,     # 自己的歌单-位置
-    "MyGod!!": 2538430210,
+    # "Eng~": 2268910083,     # 自己的歌单-位置
+    # "MyGod!!": 2538430210,
     "Kor^^": 2645448750,
     "Jan~": 2268867905,
-    "Wow°": 2962619732,
+    "relax": 2309729918,
     # "狭窄世界的少年喜欢的音乐": 448851414,
     # "民谣精选 愿你在这个孤独的世界不寂寞": 2516053542,
     # "新概念英语(全四册 课文朗读)": 102796148,
@@ -148,10 +147,11 @@ cd_lists = {
 
 
 if __name__ == '__main__':
+    mylogger = Logger(logger='netease').getlog()
     downpath = 'D:\\music-down\\netease\\'
     resultList = []
-    for music in cd_lists.keys():
-        start(downpath, getSongfromCd(cd_lists.get(music)))
-    # start(downpath, search("周笔畅"))
-    # start(downpath, search("五月天"))
+    # for music in cd_lists.keys():
+    #     start(downpath, getSongfromCd(cd_lists.get(music)))
+    start(downpath, search("薛之谦"))
+    start(downpath, search("五月天"))
     # start(downpath, getSongfromCd(2645448750))
