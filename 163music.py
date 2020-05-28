@@ -25,7 +25,7 @@ netease_header = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                   'Chrome/68.0.3440.106 Safari/537.36',
     'X-Requested-With': 'XMLHttpRequest',
-    'Cookie': 'appver=1.5.0.75771;',
+    'Cookie': '_ntes_nnid=769c1ff9d5294ef308057f1a185e2c28,1577249142312; _ntes_nuid=769c1ff9d5294ef308057f1a185e2c28; WM_TID=uxyRWSrnyrpEUQREAAJt%2Bh6LKUBVWk0k; _iuqxldmzr_=32; ntes_kaola_ad=1; JSESSIONID-WYYY=Ja0moAH7i5j64I8IVthkrbsxeoe4K36BoNmnoVktMF%2FQ7ITgNOe7ldUOpB0WWgQs8tzho2h40miu9aJTBGUiPboFFn76hfKfS4Wcpi%2BA8jfnqAfdPhNJz6FUh2MVAWSfX9U4HZQ26fFi2KEYwYl%2BJ0BKYsnaba8HeTRvM%5CmmDibRqNXJ%3A1590632972384; WM_NI=6KWB1rzI7OwdnIVokMHMlbLyr6%2BurXLwrobbyfeNPIz2%2BTVqolm61YoxDtNiBNh%2B0TiOk4E8AeA9ADPljiLelP%2B3YMfXhaXL%2BKnA0EN2iszE3SSKKyBpBEydoLnHwWKgYzk%3D; WM_NIKE=9ca17ae2e6ffcda170e2e6eedaf6478fb7ac85b2448dbc8ea2c44b978f8faef1608cba99a6d16fa8908694b22af0fea7c3b92af69599a3b47aba97f9b0f670ae979a90ea478c93a483cf73b2eae596f15490a9be90e16abbbaabafd343baeee5b5d57badb4a3d7b453ada88c95cd638292a8ccb360ab91a5d5c83483bb8fdac45094b4a68acf6fb090e5d4dc47a688a882db48e995a2a2b34f8eeea794f94ff18d9dacca7382b08ea6fc70ad94a2a9f65d89b9979bea37e2a3; MUSIC_U=edd4f7453a44f3b6cacff1ec272675b38672ffefed2613720ee2aef326c85ee133a649814e309366; __remember_me=true; __csrf=a2016837a0b1be13b68d2963db3aa726',
     'Referer': 'https://music.163.com/',
 }
 
@@ -135,12 +135,11 @@ cd_lists = {
     # "中国TOP排行榜（内地榜）": 64016,
     # "iTunes榜": 11641012,
     # "美国Billboard周榜": 60198,
-    # "Eng~": 2268910083,     # 自己的歌单-位置
-    # "MyGod!!": 2538430210,
-    # "Ohhhhh~": 2146349057,
+    "Eng~": 2268910083,     # 自己的歌单-位置
+    "MyGod!!": 2538430210,
     "Kor^^": 2645448750,
-    # "Jan~": 2268867905,
-    # "Wow°": 2962619732,
+    "Jan~": 2268867905,
+    "Wow°": 2962619732,
     # "狭窄世界的少年喜欢的音乐": 448851414,
     # "民谣精选 愿你在这个孤独的世界不寂寞": 2516053542,
     # "新概念英语(全四册 课文朗读)": 102796148,
@@ -151,8 +150,8 @@ cd_lists = {
 if __name__ == '__main__':
     downpath = 'D:\\music-down\\netease\\'
     resultList = []
-    # for music in cd_lists.keys():
-    #     start(downpath, getSongfromCd(cd_lists.get(music)))
-    start(downpath, search("周笔畅"))
-    start(downpath, search("五月天"))
+    for music in cd_lists.keys():
+        start(downpath, getSongfromCd(cd_lists.get(music)))
+    # start(downpath, search("周笔畅"))
+    # start(downpath, search("五月天"))
     # start(downpath, getSongfromCd(2645448750))

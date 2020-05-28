@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="98b307ab-1377-4219-a72f-9423ca381684" name="默认的" comment="">
+=======
+    <list default="true" id="1f208715-741e-4d4b-b46a-40b0756ec7a6" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/music_download.iml" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/163music.py" afterPath="$PROJECT_DIR$/163music.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapi.py" afterPath="$PROJECT_DIR$/myapi.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qqmusic.py" afterPath="$PROJECT_DIR$/qqmusic.py" />
@@ -14,6 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="BilibiliCrawler_v2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BilibiliCrawler_v2.py">
@@ -34,11 +42,22 @@
               <caret line="247" column="0" lean-forward="true" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
               <folding>
                 <element signature="e#213#222#0" expanded="true" />
+=======
+    <leaf>
+      <file leaf-file-name="bilibili.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bilibili.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="BilibiliCrawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BilibiliCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,10 +66,19 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="myapi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="84" selection-end-column="84" />
+              <folding />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="bilibili_video_download-GUI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bilibili_video_download-GUI.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,11 +86,21 @@
               <caret line="310" column="74" lean-forward="true" selection-start-line="310" selection-start-column="74" selection-end-line="310" selection-end-column="74" />
               <folding>
                 <element signature="e#42#56#0" expanded="true" />
+=======
+      <file leaf-file-name="163music.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/163music.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python36/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,6 +145,15 @@
     <replaceStrings>
       <replace>song_down_path</replace>
     </replaceStrings>
+=======
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>output</find>
+      <find>song_info</find>
+    </findStrings>
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,6 +161,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/myapi.py" />
         <option value="$PROJECT_DIR$/qqmusic.py" />
         <option value="$PROJECT_DIR$/163music.py" />
@@ -127,10 +175,15 @@
         <option value="$PROJECT_DIR$/bilibili_video_download_v3.py" />
         <option value="$PROJECT_DIR$/BilibiliCrawler_v2.py" />
         <option value="$PROJECT_DIR$/bilibili_video_download-GUI.py" />
+=======
+        <option value="$PROJECT_DIR$/163music.py" />
+        <option value="$PROJECT_DIR$/bilibili.py" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="236" />
     <option name="y" value="50" />
     <option name="width" value="1760" />
@@ -154,6 +207,12 @@
         </selected-state>
       </profile-state>
     </entry>
+=======
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -181,8 +240,13 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,6 +264,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.bilibili_video_download-GUI">
     <configuration name="BilibiliCrawler_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,6 +283,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+=======
+  <component name="RunManager" selected="Python.bilibili">
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
     <configuration name="bilibili" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,6 +303,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="bilibili_video_download-GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,6 +369,11 @@
         <item index="2" class="java.lang.String" itemvalue="Python.bilibili_video_download_v3" />
         <item index="3" class="java.lang.String" itemvalue="Python.bilibili" />
         <item index="4" class="java.lang.String" itemvalue="Python.daojishi" />
+=======
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.bilibili" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +382,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="98b307ab-1377-4219-a72f-9423ca381684" name="默认的" comment="" />
       <created>1569466001472</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569466001472</updated>
+=======
+      <changelist id="1f208715-741e-4d4b-b46a-40b0756ec7a6" name="默认的" comment="" />
+      <created>1570947331938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570947331938</updated>
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -340,6 +423,30 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13323572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4063492" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33015874" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -347,6 +454,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
@@ -355,10 +463,18 @@
         <watch expression="__py_debug_temp_var_1216806565['result']['songs']" />
         <watch expression="json.loads(res.text.lstrip('getOneSongInfoCallback(').rstrip(')'))" />
         <watch expression="self.percent" />
+=======
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.resultList" language="Python" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/163music.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1944">
@@ -522,20 +638,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="281" column="58" lean-forward="true" selection-start-line="281" selection-start-column="58" selection-end-line="281" selection-end-column="58" />
+=======
+    <entry file="file://$PROJECT_DIR$/myapi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="84" selection-end-column="84" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/163music.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="481">
           <caret line="151" column="8" lean-forward="false" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="42" />
           <folding>
             <element signature="e#24#39#0" expanded="false" />
+=======
+        <state relative-caret-position="268">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/bilibili-gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -592,12 +722,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="69" column="99" lean-forward="false" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="99" />
+=======
+    <entry file="file://$PROJECT_DIR$/bilibili.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="136" column="33" lean-forward="false" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="33" />
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://C:/Python36/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="940">
@@ -616,5 +753,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 065849cac80d47107d6a2c58bc533ed37db3a764
   </component>
 </project>
